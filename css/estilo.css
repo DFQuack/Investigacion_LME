@@ -143,7 +143,7 @@ article {
     margin-top: 50px;
 }
 
-article > h2 {
+article h2 {
     font-family: "Kanit", sans-serif;
     font-size: 1.8em;
     font-weight: 400;
