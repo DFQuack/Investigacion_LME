@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #3D3D3D, #6d6d6d, #3D3D3D);
+}
+
+nav {
+    background-color: black;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+    height: 40px;
+    width: 10%;
+}
+
+li a:link,
+li a:visited {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    padding: 6px 0px 0px;
+}
+
+li a:hover {
+    background-color: #F7E018;
+    color: black;
+}
+
+header {
+    height: 300px;
+
+}
+
+h1 {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 40px;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    top: 150px;
+    bottom: 0px;
+}
+
+div {
+    height: 300px;
+}
+
+#divlogo {
+    text-align: right;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    bottom: 0px;
+    z-index: -1;
+    background-color: #F7E018;
+}
+
+#logo {
+    height: 300px;
+}
+
+#fondo {
+    opacity: 0.3;
+    height: 300px;
+}
+
+section {
+    width: 70%;
+    margin: auto;
+    text-align: justify;
+    padding: 30px 20px;
+    background-color: white;
+    box-shadow: 6px 0px 10px rgba(0, 0, 0, 0.7), -6px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+section p {
+    font-family: "Zain", sans-serif;
+    font-size: 1.8em;
+}
+
+section > h2 {
+    font-family: "Kanit", sans-serif;
+    font-size: 1.8em;
+    font-weight: 400;
+    margin: 30px 0px 15px;
+    padding-left: 1%;
+    border-left: 7px solid #d89b01;
+    background-color: #FAC748;
+    color: black;
+}
+
+section h3 {
+    font-family: "Kanit", sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-decoration: underline;
+    margin: 10px 0px 5px;
+}
+
+section ul {
+    margin-left: 5%;
+    font-family: "Zain", sans-serif;
+    font-size: 1.8em;
+    list-style: square;
+}
+
+section ol {
+    margin-left: 5%;
+    font-family: "Zain", sans-serif;
+    font-size: 1.8em;
+}
+
+ins {
+    text-decoration: none;
+    font-family: "Inconsolata", monospace;
+    font-size: 25px;
+    display: inline-block;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #313131;
+    color: white;
+}
+
+article {
+    border-left: 7px solid #5e6cd4;
+    background-color: #8390FA;
+    color: white;
+    margin-top: 50px;
+}
+
+article > h2 {
+    font-family: "Kanit", sans-serif;
+    font-size: 1.8em;
+    font-weight: 400;
+    padding-left: 1%;
+}
+
+article a:link, article a:visited {
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Zain", sans-serif;
+    font-size: 1.5em;
+    color: white;
+    background-color: #8390FA;
+    padding: 5px 5px 5px 50px;
+    width: 20%;
+}
+
+article a:hover {
+    background-color: #5e6cd4;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+}
