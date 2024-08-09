@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Elemento1</li>
+            <li>Elemento2</li>
+            <li>Elemento3</li>
+            <li>Elemento4</li>
+            <li>Elemento5</li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="img/JSlogo.png">
+        <h1>JavaScript</h1>
+    </header>
+
+    <p>
+        JavaScript es un lenguaje de programación orientado a objetos que permite implementar funciones complejas en páginas web para que sean dinámicas. Es compatible con todos los navegadores modernos y se ejecuta en el navegador del usuario. Es la tercera capa de las tecnologías web estándar, junto a HTML y CSS.
+    </p>
+
+    <h2>Usos de JavaScript</h2>
+    <p>
+        JavaScript es posiblemente el lenguaje de programación más popular de la web, siendo actualmente usado para:
+    </p>
+    <ul>
+        <li>Interactividad y dinamismo en páginas web</li>
+        <li>Back-end de aplicaciones y sitios web</li>
+        <li>Aplicaciones web</li>
+        <li>Juegos de navegador</li>
+    </ul>
+
+    <h2>Cómo utilizar JavaScript en una página web</h2>
+    <p>
+        Para añadir JavaScript a una página web simplemente hay que usar la etiqueta script, de forma muy similar a como se vincula CSS con HTML. Hay dos formas para lograr esto:
+        <ol>
+            <li>Enlazando la etiqueta script a un archivo externo.</li>
+            <p class="codigo">&lt;script src="tuArchivo.js"&gt;&lt;/script&gt;</p>
+            <li>Inyectando el código JavaScript directamente en el HTML.</li>
+            <p class="codigo">&lt;script type="texto/JavaScript"&gt; Código JavaScript &lt;/script&gt;</p>
+        </ol>
+        Se recomienda trabajar con la primera forma, ya que trabajar el código en un archivo separado permite modificarlo sea más fácil.
+    </p>
+
+    <h2>Manejo de variables en JavaScript</h2>
+    <h3>Declaración de variables</h3>
+    <p>Hay cuatro formas de declarar variables en JavaScript:</p>
+    <ol>
+        <li><b>Automáticamente</b>. No se recomienda por no ser buena práctica.</li>
+        <li><b>Var</b>. Usada en versiones antiguas de JavaScript.</li>
+        <li><b>Let</b>. La más recomendada actualmente.</li>
+        <li><b>Const</b>. Usada para valores constantes que no van a cambiar.</li>
+    </ol>
+
+    <h3>Uso de variables</h3>
+    <p>Se puede mostrar el valor de una variable usando getElementById() para asignarle a un elemento específico el valor de dicha variable.</p>
+    <p class="codigo">
+        &lt;p id="demo"&gt; &lt;/p&gt;<br>
+        &lt;script&gt;<br>
+        &emsp;let carName = "Volvo";<br>
+        &emsp;document.getElementById("demo").innerHTML = carName;<br>
+        &lt;/script&gt;
+    </p>
+    <p>También se pueden usar diferentes operadores aritméticos (+, -, *, /, %) para modificar los valores de las variables.</p>
+
+    <h2>Fuentes de consulta</h2>
+    <ul>
+        <li><a href="https://blog.hubspot.es/website/que-es-javascript" target="_blank">HubSpot</a></li>
+        <li><a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript" target="_blank">MDN</a></li>
+        <li><a href="https://blog.hubspot.es/website/que-es-javascript" target="_blank">HubSpot</a></li>
+    </ul>
+</body>
+</html>
