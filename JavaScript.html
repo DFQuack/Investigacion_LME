@@ -56,7 +56,7 @@
             <li>Enlazando la etiqueta script a un archivo externo.</li>
             <ins>&lt;script src="tuArchivo.js"&gt;&lt;/script&gt;</ins>
             <li>Inyectando el código JavaScript directamente en el HTML.</li>
-            <ins>&lt;script type="texto/JavaScript"&gt; Código JavaScript &lt;/script&gt;</ins>
+            <ins>&lt;script&gt; Código JavaScript &lt;/script&gt;</ins>
         </ol>
         <p>
             Se recomienda trabajar con la primera forma, ya que trabajar el código en un archivo separado permite
@@ -85,15 +85,67 @@
         <ins>
             &lt;p id="demo"&gt; &lt;/p&gt;<br>
             &lt;script&gt;<br>
-            &emsp;let carName = "Volvo";<br>
-            &emsp;document.getElementById("demo").innerHTML = carName;<br>
+            &emsp;let nombreCarro = "Volvo";<br>
+            &emsp;document.getElementById("demo").innerHTML = nombreCarro;<br>
             &lt;/script&gt;
         </ins>
-        <p>También se pueden usar diferentes operadores aritméticos (+, -, *, /, %) para modificar los valores de las variables.</p>
+        <p>También se pueden usar diferentes operadores aritméticos (+, -, *, /, %) para modificar los valores de las
+            variables.</p>
         <ins>z = (x + y) / pi;</ins>
 
         <h2>Ejemplo de JavaScript: IMC</h2>
-        <p>IMC</p>
+        <p>
+            El índice de masa corporal es el peso de una persona en kilogramos dividido por el cuadrado de la
+            estatura en metros. El IMC es un método de evaluación fácil y económico para la categoría de peso: bajo
+            peso, peso saludable, sobrepeso, y obesidad.
+        </p>
+        <p>
+            El IMC no mide la grasa corporal directamente, pero el IMC se correlaciona moderadamente con medidas más
+            directas de la grasa corporal. Además, el IMC parece estar tan fuertemente correlacionado con diversos
+            resultados metabólicos y de enfermedades como lo están estas medidas más directas de la grasa corporal.
+        </p>
+        <img src="img/bannerIMC.jpg">
+        <p>
+            La correlación entre el IMC y la grasa corporal es bastante fuerte, pero incluso si dos personas tienen el
+            mismo IMC, su nivel de grasa corporal puede ser diferente. Si bien es muy probable que una persona con un
+            IMC muy alto tenga una grasa corporal alta, un IMC relativamente alto puede ser el resultado de una grasa
+            corporal alta o una masa corporal magra alta (músculos y huesos).
+        </p>
+        <p>
+            Para calcular su IMC, utilice la calculadora que se presenta abajo. Aplica solo para adultos de 20 años en
+            adelante.
+        </p>
+
+        <form>
+            <label for="peso">Peso (kg):</label><br>
+            <input type="text" id="peso" name="peso"><br>
+
+            <label for="altura">Estatura (m):</label><br>
+            <input type="text" id="altura" name="altura"><br>
+
+            <input type="button" value="Calcular" id="ok"><br>
+            <p id="result">...</p>
+        </form>
+
+        <aside>
+            <ul>
+                <div>
+                    <li class="negro">Categoría</li>
+                    <li class="azul">Bajo peso</li>
+                    <li class="verde">Peso saludable</li>
+                    <li class="naranja">Sobrepeso</li>
+                    <li class="rojo">Obesidad</li>
+                </div>
+                <div>
+                    <li class="negro">IMC</li>
+                    <li class="azul">&lt;18.5</li>
+                    <li class="verde">18.5 - 24.9</li>
+                    <li class="naranja">25.0 - 29.9</li>
+                    <li class="rojo">&gt;30.0</li>
+                </div>
+            </ul>
+        </aside>
+
         <article>
             <h2>Referencias</h2>
             <a href="https://blog.hubspot.es/website/que-es-javascript" target="_blank">HubSpot</a><br>
@@ -101,7 +153,13 @@
                 target="_blank">MDN</a><br>
             <a href="https://www.w3schools.com/js/default.asp" target="_blank">W3Schools</a><br>
         </article>
+        Photo by <a
+            href="https://unsplash.com/@huckster?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Huckster</a>
+        on <a
+            href="https://unsplash.com/photos/two-men-running-at-park-V62UrdknDCA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
     </section>
 </body>
+
+<script src="js/imc.js"></script>
 
 </html>
