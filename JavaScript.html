@@ -115,36 +115,37 @@
             Para calcular su IMC, utilice la calculadora que se presenta abajo. Aplica solo para adultos de 20 años en
             adelante.
         </p>
+        <div id="divIMC">
+            <form>
+                <label for="peso">Peso (kg):</label><br>
+                <input type="text" id="peso" name="peso"><br>
 
-        <form>
-            <label for="peso">Peso (kg):</label><br>
-            <input type="text" id="peso" name="peso"><br>
+                <label for="altura">Estatura (m):</label><br>
+                <input type="text" id="altura" name="altura"><br>
 
-            <label for="altura">Estatura (m):</label><br>
-            <input type="text" id="altura" name="altura"><br>
+                <input type="button" value="Calcular" id="ok"><br>
+                <p id="result">...</p>
+            </form>
 
-            <input type="button" value="Calcular" id="ok"><br>
-            <p id="result">...</p>
-        </form>
-
-        <aside>
-            <ul>
-                <div>
-                    <li class="negro">Categoría</li>
-                    <li class="azul">Bajo peso</li>
-                    <li class="verde">Peso saludable</li>
-                    <li class="naranja">Sobrepeso</li>
-                    <li class="rojo">Obesidad</li>
-                </div>
-                <div>
-                    <li class="negro">IMC</li>
-                    <li class="azul">&lt;18.5</li>
-                    <li class="verde">18.5 - 24.9</li>
-                    <li class="naranja">25.0 - 29.9</li>
-                    <li class="rojo">&gt;30.0</li>
-                </div>
-            </ul>
-        </aside>
+            <aside>
+                <ul>
+                    <div>
+                        <li class="negro">Categoría</li>
+                        <li class="azul">Bajo peso</li>
+                        <li class="verde">Peso saludable</li>
+                        <li class="naranja">Sobrepeso</li>
+                        <li class="rojo">Obesidad</li>
+                    </div>
+                    <div>
+                        <li class="negro">IMC</li>
+                        <li class="azul">&lt;18.5</li>
+                        <li class="verde">18.5 - 24.9</li>
+                        <li class="naranja">25.0 - 29.9</li>
+                        <li class="rojo">&gt;30.0</li>
+                    </div>
+                </ul>
+            </aside>
+        </div>
 
         <article>
             <h2>Referencias</h2>
@@ -153,11 +154,11 @@
                 target="_blank">MDN</a><br>
             <a href="https://www.w3schools.com/js/default.asp" target="_blank">W3Schools</a><br>
         </article>
-        Photo by <a
-            href="https://unsplash.com/@huckster?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Huckster</a>
-        on <a
-            href="https://unsplash.com/photos/two-men-running-at-park-V62UrdknDCA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
     </section>
+
+    <footer>
+        <p>Todos los derechos reservados.</p>
+    </footer>
 </body>
 
 <script src="js/imc.js"></script>
