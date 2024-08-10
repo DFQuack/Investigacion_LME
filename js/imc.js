@@ -7,8 +7,9 @@ function calcIMC() {
     let imc = peso / Math.pow(h, 2);
     imc = imc.toFixed(1);
 
-    if (isNaN(imc)) {
+    if (isNaN(imc) || !isFinite(imc)) {
         document.getElementById("result").innerHTML = "Inserte valores válidos."
+        return;
     }
     else {
         document.getElementById("result").innerHTML = "IMC: " + imc;
