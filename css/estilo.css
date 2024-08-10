@@ -87,12 +87,12 @@ section {
     box-shadow: 6px 0px 10px rgba(0, 0, 0, 0.7), -6px 0px 10px rgba(0, 0, 0, 0.7);
 }
 
-section > p {
+section>p {
     font-family: "Zain", sans-serif;
     font-size: 1.8em;
 }
 
-section > h2 {
+section>h2 {
     font-family: "Kanit", sans-serif;
     font-size: 1.8em;
     font-weight: 400;
@@ -111,7 +111,7 @@ section h3 {
     margin: 10px 0px 5px;
 }
 
-section > ul {
+section>ul {
     margin-left: 5%;
     font-family: "Zain", sans-serif;
     font-size: 1.8em;
@@ -125,7 +125,7 @@ section ol {
 }
 
 section img {
-    width:100%;
+    width: 100%;
 }
 
 ins {
@@ -138,6 +138,10 @@ ins {
     border-radius: 5px;
     background-color: #313131;
     color: white;
+}
+
+div#divIMC {
+    text-align: center;
 }
 
 form {
@@ -180,9 +184,10 @@ aside {
     display: inline-block;
     height: 280px;
     padding: 15px;
-    margin: 30px 15px;
     background-color: #e0e0e0;
     border: 5px solid #bdbdbd;
+    position: relative;
+    bottom: 4px;
 }
 
 aside ul {
@@ -193,11 +198,12 @@ aside ul {
 
 aside div {
     display: inline-block;
+    text-align: left;
 }
 
-div + div {
+div+div {
     text-align: right;
-    margin-left: -5px;
+    margin-left: -10px;
 }
 
 aside li {
@@ -214,15 +220,15 @@ li.azul {
 }
 
 li.verde {
-    background-color: #187539;
+    background-color: #336819;
 }
 
 li.naranja {
-    background-color: #F77F00;
+    background-color: #c56601;
 }
 
 li.rojo {
-    background-color: #D62828;
+    background-color: #b32121;
 }
 
 article {
@@ -239,7 +245,8 @@ article h2 {
     padding-left: 1%;
 }
 
-article a:link, article a:visited {
+article a:link,
+article a:visited {
     text-decoration: none;
     display: inline-block;
     font-family: "Zain", sans-serif;
@@ -253,4 +260,13 @@ article a:link, article a:visited {
 article a:hover {
     background-color: #5e6cd4;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    background-color: #222222;
+    color: white;
+    font-family: "Zain", sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 20px;
 }
